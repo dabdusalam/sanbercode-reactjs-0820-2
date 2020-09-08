@@ -4,7 +4,8 @@ class Timer extends Component{
   constructor(props){
     super(props)
     this.state = {
-      time: 100
+      time: 100 ,
+      curTime : new Date().toLocaleString('en-US'),
     }
   }
 
@@ -24,18 +25,11 @@ class Timer extends Component{
     });
   }
 
-  stater() {
-    this.setcurTime({
-      curTime : this.Date().toLocaleString()
-    });
- }
-
-
   render(){
     return(
       <>
         <h1 style={{textAlign: "center"}}>
-          Sekarang Jam : {this.stater.curTime},
+          Sekarang Jam : {this.state.curTime},
           hitung mundur: {this.state.time}
         </h1>
       </>

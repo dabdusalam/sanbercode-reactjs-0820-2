@@ -1,22 +1,14 @@
-import React, {Component} from 'react';
-//import logo from './logo.svg';
+import React from 'react';
+import Timer from './Tugas-11/Timer';
 import './App.css';
-import tugas9 from './Tugas-9/tugas9.js';
-//import tugas10 from './Tugas-10/tugas10.js';
 
-class App extends Component {
-  render(){
-    return(
-      <div clasName="App">
-     
-      
-      <tugas9/>
-      </div>
+function App() {
+  return (
+    <>
 
-      )
-  }
-
+      <Timer/>
+    </>
+  );
 }
 
-export default tugas9;
-
+export default App;
