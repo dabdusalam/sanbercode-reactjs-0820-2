@@ -5,7 +5,7 @@ class Timer extends Component{
     super(props)
     this.state = {
       time: 100 ,
-      curTime : new Date().toLocaleString('en-US'),
+      curTime : new Date().toLocaleTimeString('en-US'),
     }
   }
 
